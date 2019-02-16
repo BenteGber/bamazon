@@ -45,7 +45,7 @@ const addUser = (user) => {
             if (err) throw err;
         })
 }
-const purchaseItem = (id) => {
+const purchaseItem = (id, purchaseQuantity) => {
     connection.query(
         'UPDATE products SET ? WHERE ?',
         [
@@ -53,7 +53,7 @@ const purchaseItem = (id) => {
                 stock_quantity: purchaseQuantity
             },
             {
-                id: chosenItem
+                id: id
             }
         ],
         (err) => {
@@ -66,6 +66,7 @@ module.exports = {
     connection: connection,
     getProducts: getProducts,
     addUser: addUser,
-    getItem: getItem
+    getItem: getItem,
+    purchaseItem: purchaseItem
 
 }
