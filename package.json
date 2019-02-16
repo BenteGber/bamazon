@@ -1,0 +1,23 @@
+{
+  "name": "bamazon",
+  "version": "1.0.0",
+  "description": "CLI storefront using MySql and node to purchase and track products",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BenteGber/bamazon.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BenteGber/bamazon/issues"
+  },
+  "homepage": "https://github.com/BenteGber/bamazon#readme",
+  "dependencies": {
+    "mysql": "^2.16.0"
+  }
+}
